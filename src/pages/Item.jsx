@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Sidebar from "../components/common/sidebar";
+import Sidebar from "../components/common/Sidebar.jsx";
 import { Link } from "react-router-dom";
 import Table from "../components/Table.jsx";
 import TableActions from "../helpers/actions.jsx";

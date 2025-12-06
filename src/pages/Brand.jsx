@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Sidebar from "../components/common/sidebar";
+import Sidebar from "../components/common/Sidebar.jsx";
 import { Link } from "react-router-dom";
 import DataTable from "react-data-table-component";
 import Table from "../components/Table";
-
 import TableActions from "../helpers/actions";
 import BrandFormModal from "../components/BrandFormModal";
 import { toast } from "react-toastify";
