@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Item A", "amount": 100, "brandId": 1, "modelId": 1, "dateAdded": "2025-12-01" },
+  { "id": 2, "name": "Item B", "amount": 200, "brandId": 2, "modelId": 2, "dateAdded": "2025-12-02" },
+  { "id": 3, "name": "Item C", "amount": 150, "brandId": 1, "modelId": 1, "dateAdded": "2025-12-03" },
+  { "id": 4, "name": "Item D", "amount": 150, "brandId": 3, "modelId": 3, "dateAdded": "2025-12-03" }
+]
