@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-function ItemFormModal({ onClose, title, onSave, brands, models, Edit }) {
+function ItemFormModal({ onClose, title, onSave, brands, models, items, Edit }) {
+  // react hook form component to handle and update the data and validations.
   const {
     register,
     handleSubmit,
@@ -10,15 +11,20 @@ function ItemFormModal({ onClose, title, onSave, brands, models, Edit }) {
     formState: { errors },
   } = useForm();
 
+   // if data is edited receive the data and perform the reset function of the react hook form to update the data
+
   useEffect(() => {
     if (Edit) {
       reset(Edit);
     }
   }, [Edit]);
+
+  // receives the add or update method from the page as onSave props. works with the handle submit method of react hook form when the form is submitted.
   const saveItem = (data) => {
     onSave(data);
   };
-
+  
+// a single modal for both the add and update 
   return (
     <div
       className="modal show d-block"
@@ -46,6 +52,10 @@ function ItemFormModal({ onClose, title, onSave, brands, models, Edit }) {
                 name="name"
                 {...register("name", {
                   required: "name is required",
+                  validate: (value) =>
+                    !items.some(
+                      (item) => item.name.toLowerCase() === value.toLowerCase()
+                    ) || "Name already exists",
                 })}
               />
               {errors.name && (
@@ -61,6 +71,7 @@ function ItemFormModal({ onClose, title, onSave, brands, models, Edit }) {
                 type="number"
                 {...register("amount", {
                   required: "amount is required",
+                  
                 })}
               />
               {errors.amount && (
@@ -103,7 +114,7 @@ function ItemFormModal({ onClose, title, onSave, brands, models, Edit }) {
                 name="model"
                 {...register("modelId")}
               >
-                <option disabled value="">
+                <option value="">
                   Select model
                 </option>
                 {models

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 function Sidebar() {
+  // sidebar with the link of pages and the selected page stays highlighted
   
   return (
     <>

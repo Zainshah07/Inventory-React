@@ -1,6 +1,9 @@
 [
   { "id": 1, "name": "Item A", "amount": 100, "brandId": 1, "modelId": 1, "dateAdded": "2025-12-01" },
-  { "id": 2, "name": "Item B", "amount": 200, "brandId": 2, "modelId": 2, "dateAdded": "2025-12-02" },
-  { "id": 3, "name": "Item C", "amount": 150, "brandId": 1, "modelId": 1, "dateAdded": "2025-12-03" },
-  { "id": 4, "name": "Item D", "amount": 150, "brandId": 3, "modelId": 3, "dateAdded": "2025-12-03" }
+  { "id": 2, "name": "Item B", "amount": 250, "brandId": 2, "modelId": 2, "dateAdded": "2025-12-02" },
+  { "id": 3, "name": "Item C", "amount": 180, "brandId": 2, "modelId": 3, "dateAdded": "2025-12-03" },
+  { "id": 4, "name": "Item D", "amount": 90, "brandId": 3, "modelId": 4, "dateAdded": "2025-12-04" },
+  { "id": 5, "name": "Item E", "amount": 120, "brandId": 3, "modelId": 5, "dateAdded": "2025-12-05" },
+  { "id": 6, "name": "Item F", "amount": 300, "brandId": 4, "modelId": 6, "dateAdded": "2025-12-06" },
+  { "id": 7, "name": "Item G", "amount": 75, "brandId": 5, "modelId": 7, "dateAdded": "2025-12-07" }
 ]

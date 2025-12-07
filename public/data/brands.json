@@ -1,7 +1,12 @@
 [
-  { "id": 1, "name": "Brand X" },
-  { "id": 2, "name": "Brand Y" },
-  { "id": 3, "name": "Brand Z" },
-  { "id": 4, "name": "Brand D" },
-  { "id": 5, "name": "Brand X" }
+  { "id": 1, "name": "Brand Q" },
+  { "id": 2, "name": "Brand R" },
+  { "id": 3, "name": "Brand S" },
+  { "id": 4, "name": "Brand T" },
+  { "id": 5, "name": "Brand U" },
+  { "id": 6, "name": "Brand V" },
+  { "id": 7, "name": "Brand W" },
+  { "id": 8, "name": "Brand X" },
+  { "id": 9, "name": "Brand Y" },
+  { "id": 10, "name": "Brand Z" }
 ]

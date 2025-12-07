@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-function BrandFormModal({ onClose, title, onSave, Edit }) {
+function BrandFormModal({ onClose, title, onSave, Edit, brands }) {
+  // react hook form component to handle and update the data and validations. 
   const {
     register,
     handleSubmit,
@@ -10,14 +11,19 @@ function BrandFormModal({ onClose, title, onSave, Edit }) {
     formState: { errors },
   } = useForm();
 
+   // receives the add or update method from the page as onSave props. works with the handle submit method of react hook form when the form is submitted.
   const saveBrand = (data) => {
     onSave(data);
   };
+
+   // if data is edited receive the data and perform the reset function of the react hook form to update the data
   useEffect(() => {
     if (Edit) {
       reset(Edit);
     }
   }, [Edit]);
+
+  // a single modal for both the add and update 
   return (
     <div
       className="modal show d-block"
@@ -45,6 +51,10 @@ function BrandFormModal({ onClose, title, onSave, Edit }) {
                 name="name"
                 {...register("name", {
                   required: "name is required",
+                  validate: (value) =>
+                    !brands.some(
+                      (brand) => brand.name.toLowerCase() === value.toLowerCase()
+                    ) || "Name already exists",
                 })}
               />
               {errors.name && (

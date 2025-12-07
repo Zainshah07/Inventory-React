@@ -1,5 +1,6 @@
 import React from "react";
 
+// contains the svgs of the edit and delete action and takes the props to perform the edit and delete functions on the row.
 const TableActions = ({ onEdit, onDelete, row }) => {
   return (
     <div className="d-flex">
