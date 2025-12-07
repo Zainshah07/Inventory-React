@@ -67,7 +67,7 @@ function Brand() {
     };
     setBrands([...brands, newBrand]);
     setShowModal(false);
-    toast.success("brand added");
+    toast.success("brand added successfuly");
   };
   // display the fetched data of items brands and models
   useEffect(() => {
